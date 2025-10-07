@@ -11,6 +11,8 @@ return {
       "vtsls",
       "vue_ls",
 
+      "rust_analyzer",
+
       "pylsp",
     },
   },
