@@ -7,7 +7,7 @@ return {
       "nil_ls",
 
       "eslint_lsp",
-      "typescript-language-server",
+      "ts_ls",
       "vue_ls",
 
       "pylsp",
