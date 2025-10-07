@@ -12,12 +12,8 @@ return {
     dashboard = {
       enabled = true,
       preset = {
-        -- Defaults to a picker that supports `fzf-lua`, `telescope.nvim` and `mini.pick`
         ---@type fun(cmd:string, opts:table)|nil
         pick = nil,
-        -- Used by the `keys` section to show keymaps.
-        -- Set your custom keymaps here.
-        -- When using a function, the `items` argument are the default keymaps.
         ---@type snacks.dashboard.Item[]
         keys = {
           { icon = " ", key = "f", desc = "Find File", action = ":lua Snacks.dashboard.pick('files')" },
@@ -33,6 +29,7 @@ return {
       explorer = { enabled = false },
       indent = { enabled = true },
       input = { enabled = true },
+      lazygit = { enabled = true },
       picker = { enabled = false },
       notifier = { enabled = false },
       quickfile = { enabled = true },
