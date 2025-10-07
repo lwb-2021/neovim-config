@@ -6,7 +6,7 @@ return {
       "lua_ls",
       "nil_ls",
 
-      "eslint_lsp",
+      "eslint",
       "ts_ls",
       "vtsls",
       "vue_ls",
