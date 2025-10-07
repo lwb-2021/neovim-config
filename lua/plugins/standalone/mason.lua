@@ -8,6 +8,7 @@ return {
 
       "eslint_lsp",
       "ts_ls",
+      "vtsls",
       "vue_ls",
 
       "pylsp",
