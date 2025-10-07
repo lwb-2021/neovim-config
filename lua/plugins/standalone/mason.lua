@@ -6,6 +6,10 @@ return {
       "lua_ls",
       "nil_ls",
 
+      "eslint_lsp",
+      "typescript-language-server",
+      "vue_ls",
+
       "pylsp",
     },
   },
