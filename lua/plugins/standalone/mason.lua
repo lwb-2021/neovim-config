@@ -7,7 +7,7 @@ return {
       "nil_ls",
 
       "eslint",
-      "ts_ls",
+      -- "ts_ls",
       "vtsls",
       "vue_ls",
 
@@ -50,18 +50,35 @@ return {
           filetypes = tsserver_filetypes,
         }
 
-        local ts_ls_config = {
-          init_options = {
-            plugins = {
-              vue_plugin,
+        --local ts_ls_config = {
+        --init_options = {
+        --  plugins = {
+        --    vue_plugin,
+        --  },
+        --},
+        --filetypes = tsserver_filetypes,
+        --}
+
+        local rust_analyzer_config = {
+          imports = {
+            granularity = {
+              group = "module",
+            },
+            prefix = "self",
+          },
+          cargo = {
+            buildScripts = {
+              enable = true,
             },
           },
-          filetypes = tsserver_filetypes,
+          procMacro = {
+            enable = true
+          },
         }
         vim.lsp.config('vtsls', vtsls_config)
         vim.lsp.config('vue_ls', vue_ls_config)
-        vim.lsp.config('ts_ls', ts_ls_config)
-        vim.lsp.enable({ 'vtsls', 'vue_ls' })
+        -- vim.lsp.config('ts_ls', ts_ls_config)
+        vim.lsp.config('rust_analyzer', rust_analyzer_config)
       end
     }
   },
