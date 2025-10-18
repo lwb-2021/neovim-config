@@ -3,6 +3,7 @@ return {
   event = "VeryLazy",
   opts = {
     -- add any options here
+    background_colour = "#1e1e2e",
   },
   dependencies = {
     -- if you lazy-load any plugin below, make sure to add proper `module="..."` entries
