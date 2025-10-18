@@ -7,7 +7,6 @@ return {
       "nil_ls",
 
       "eslint",
-      -- "ts_ls",
       "vtsls",
       "vue_ls",
 
