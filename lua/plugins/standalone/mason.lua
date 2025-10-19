@@ -1,24 +1,26 @@
+local lsp = {
+  "lua_ls",
+  "nil_ls",
+
+  "eslint",
+  "vtsls",
+  "vue_ls",
+
+  "rust_analyzer",
+
+  "pylsp",
+}
+
 return {
   "mason-org/mason-lspconfig.nvim",
   opts = {
     automatic_enable = true,
-    ensure_installed = {
-      "lua_ls",
-      "nil_ls",
-
-      "eslint",
-      "vtsls",
-      "vue_ls",
-
-      "rust_analyzer",
-
-      "pylsp",
-    },
   },
   dependencies = {
     {
       "mason-org/mason.nvim",
       opts = {
+        ensure_installed = lsp,
       }
     },
     {
@@ -78,6 +80,8 @@ return {
         vim.lsp.config('vue_ls', vue_ls_config)
         -- vim.lsp.config('ts_ls', ts_ls_config)
         vim.lsp.config('rust_analyzer', rust_analyzer_config)
+
+        vim.lsp.enable(lsp, false)
       end
     }
   },
