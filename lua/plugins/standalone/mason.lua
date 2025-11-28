@@ -51,15 +51,7 @@ return {
           filetypes = tsserver_filetypes,
         }
 
-        --local ts_ls_config = {
-        --init_options = {
-        --  plugins = {
-        --    vue_plugin,
-        --  },
-        --},
-        --filetypes = tsserver_filetypes,
-        --}
-
+        --[[
         local rust_analyzer_config = {
           imports = {
             granularity = {
@@ -76,10 +68,10 @@ return {
             enable = true
           },
         }
+        ]]
         vim.lsp.config('vtsls', vtsls_config)
         vim.lsp.config('vue_ls', vue_ls_config)
-        -- vim.lsp.config('ts_ls', ts_ls_config)
-        vim.lsp.config('rust_analyzer', rust_analyzer_config)
+        -- vim.lsp.config('rust_analyzer', rust_analyzer_config)
 
         vim.lsp.enable(lsp, false)
       end
