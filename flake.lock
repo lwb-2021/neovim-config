@@ -69,10 +69,10 @@
         ]
       },
       "locked": {
-        "lastModified": 1766244321,
-        "narHash": "sha256-cJ2PgSlfzRAsdUNt+MWsgF1UtUD5tGviIwTL5SyURg8=",
+        "lastModified": 1766328071,
+        "narHash": "sha256-54zDEm3Y0zzdzKhsnzfv25Z9bPx2g32HKjsKo6pHnwc=",
         "ref": "refs/heads/main",
-        "rev": "051bf14b1458c28682cac928a128897ed5ec4664",
+        "rev": "2e1dabbc3c31b4ec1f04cc998a2502baf37f28e3",
         "shallow": true,
         "type": "git",
         "url": "https://codeberg.org/NicoElbers/nixPatch-nvim"
@@ -85,19 +85,19 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1766070988,
-        "narHash": "sha256-G/WVghka6c4bAzMhTwT2vjLccg/awmHkdKSd2JrycLc=",
+        "lastModified": 1766651565,
+        "narHash": "sha256-QEhk0eXgyIqTpJ/ehZKg9IKS7EtlWxF3N7DXy42zPfU=",
         "ref": "nixos-unstable",
-        "rev": "c6245e83d836d0433170a16eb185cefe0572f8b8",
+        "rev": "3e2499d5539c16d0d173ba53552a4ff8547f4539",
         "shallow": true,
         "type": "git",
-        "url": "https://github.com/NixOS/nixpkgs"
+        "url": "https://mirrors.tuna.tsinghua.edu.cn/git/nixpkgs.git"
       },
       "original": {
         "ref": "nixos-unstable",
         "shallow": true,
         "type": "git",
-        "url": "https://github.com/NixOS/nixpkgs"
+        "url": "https://mirrors.tuna.tsinghua.edu.cn/git/nixpkgs.git"
       }
     },
     "root": {

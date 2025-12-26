@@ -2,7 +2,7 @@
   description = "My neovim config";
 
   inputs = {
-    nixpkgs.url = "git+https://github.com/NixOS/nixpkgs?shallow=1&ref=nixos-unstable";
+    nixpkgs.url = "git+https://mirrors.tuna.tsinghua.edu.cn/git/nixpkgs.git?shallow=1&ref=nixos-unstable";
 
     # In case you want nightly
     # neovim-nightly-overlay = {
@@ -79,9 +79,13 @@
           plugins = with pkgs.vimPlugins; [
             lazy-nvim
 
+            nvim-web-devicons
+            plenary-nvim
+
             catppuccin-nvim
             comment-nvim
             flash-nvim
+            nvim-lspconfig
             (nvim-treesitter.withPlugins (
               p: with p; [
                 markdown
@@ -132,7 +136,7 @@
           # Runtime dependencies. This is thing like tree-sitter, lsps or programs
           # like ripgrep.
           runtimeDeps = with pkgs; [
-
+            tree-sitter
             ripgrep
           ];
 
@@ -172,7 +176,8 @@
 
           # Custom subsitutions you want the patcher to make. Custom subsitutions
           # can be generated using
-          customSubs = with patchUtils; [ ];
+          customSubs = with patchUtils; [
+          ] ++ (patchUtils.stringSub "lsp.vue-language-server" "${pkgs.vue-language-server}");
           # For example, if you want to add a plugin with the short url
           # "cool/plugin" which is in nixpkgs as plugin-nvim you would do:
           # ++ (patchUtils.githubUrlSub "cool/plugin" plugin-nvim);
