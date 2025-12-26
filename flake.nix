@@ -138,6 +138,13 @@
           runtimeDeps = with pkgs; [
             tree-sitter
             ripgrep
+
+            lua-language-server
+            nil
+            eslint
+            vtsls
+            vue-language-server
+            rust-analyzer
           ];
 
           # Environment variables set during neovim runtime.
@@ -157,7 +164,8 @@
 
           # Extra python packages for the neovim provider.
           # This must be a list of functions returning lists.
-          python3Packages = [ ];
+          python3Packages = [
+          ];
 
           # Wrapper args but then for the python provider.
           extraPython3WrapperArgs = [ ];
@@ -176,8 +184,11 @@
 
           # Custom subsitutions you want the patcher to make. Custom subsitutions
           # can be generated using
-          customSubs = with patchUtils; [
-          ] ++ (patchUtils.stringSub "lsp.vue-language-server" "${pkgs.vue-language-server}");
+          customSubs =
+            with patchUtils;
+            [
+            ]
+            ++ (patchUtils.stringSub "lsp.vue-language-server" "${pkgs.vue-language-server}");
           # For example, if you want to add a plugin with the short url
           # "cool/plugin" which is in nixpkgs as plugin-nvim you would do:
           # ++ (patchUtils.githubUrlSub "cool/plugin" plugin-nvim);
