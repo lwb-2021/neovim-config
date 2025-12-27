@@ -23,6 +23,7 @@ return {
   ---@module 'neo-tree'
   ---@type neotree.Config
   opts = {
+    popup_border_style = "",
     filesystem = {
       filtered_items = {
         visible = true,
