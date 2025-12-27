@@ -12,6 +12,7 @@ return {
     },
   },
   opts = {
+    last_session_on_startup = false,
     projects = { -- define project roots
       "~/NixOS-Configuration",
       "~/Workspace/*/*",
