@@ -145,6 +145,12 @@
             vtsls
             vue-language-server
             rust-analyzer
+
+            cargo
+
+            rustfmt
+
+            wl-clipboard-rs
           ];
 
           # Environment variables set during neovim runtime.
