@@ -5,10 +5,10 @@ return {
     require("nvim-treesitter.configs").setup {
       ensure_installed = {
         "markdown", "latex",
-        
+
         "desktop", "kdl", "toml", "yaml",
-        
-        
+
+        "javascript", "typescript",
         "lua", "nix",
 
         "c", "cpp", "java", "javadoc", "python", "rust",

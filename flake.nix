@@ -99,6 +99,9 @@
                 lua
                 nix
 
+                javascript
+                typescript
+
                 c
                 cpp
                 java
