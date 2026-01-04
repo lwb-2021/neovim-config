@@ -6,6 +6,8 @@ local lsp = {
   "vtsls",
   "vue_ls",
 
+  "slint_lsp",
+
   "rust_analyzer",
 
   "pylsp",

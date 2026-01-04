@@ -8,6 +8,8 @@ return {
 
         "desktop", "kdl", "toml", "yaml",
 
+        "slint",
+
         "javascript", "typescript",
         "lua", "nix",
 

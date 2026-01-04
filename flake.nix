@@ -99,6 +99,8 @@
                 lua
                 nix
 
+                slint
+
                 javascript
                 typescript
 
@@ -144,6 +146,7 @@
 
             lua-language-server
             nil
+            slint-lsp
             eslint
             vtsls
             vue-language-server
