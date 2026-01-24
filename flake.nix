@@ -117,8 +117,12 @@
             snacks-nvim
 
             nvim-autopairs
+
+            # -- blink --
+            friendly-snippets
             blink-cmp
-            bufferline-nvim
+            # -----------
+
             codecompanion-nvim
             nvim-colorizer-lua
             conform-nvim
@@ -126,11 +130,13 @@
             lualine-nvim
             markview-nvim
             neo-tree-nvim
+
             # -- noice --
             noice-nvim
             nui-nvim
             nvim-notify
             # -----------
+
             # project
             telescope-nvim
             toggleterm-nvim
@@ -200,6 +206,7 @@
             with patchUtils;
             [
             ]
+            ++ (patchUtils.urlSub "saghen/blink.cmp" pkgs.vimPlugins.blink-cmp)
             ++ (patchUtils.stringSub "lsp.vue-language-server" "${pkgs.vue-language-server}");
           # For example, if you want to add a plugin with the short url
           # "cool/plugin" which is in nixpkgs as plugin-nvim you would do:
