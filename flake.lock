@@ -32,11 +32,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1766189079,
-        "narHash": "sha256-K+xdRPIfIE8Xr3JHKNkVNnxPnihrPtW+D1rtcjHx1u4=",
+        "lastModified": 1767398712,
+        "narHash": "sha256-kISX2IOmbk+A0xfGsO/ZN8d0QZiL0+PRKdiGM+Uh1Ok=",
         "owner": "nix-community",
         "repo": "neovim-nightly-overlay",
-        "rev": "7e47a8c64312e726aafc0789a5d9043501a7e3ae",
+        "rev": "519c66e44d81e2a752759d60320dbd6f06c14437",
         "type": "github"
       },
       "original": {
@@ -48,11 +48,11 @@
     "neovim-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1766187129,
-        "narHash": "sha256-SqvXXTi+nLihMFhHUT7/1JtNqWk2cMKiCvWxYKE03r8=",
+        "lastModified": 1767367892,
+        "narHash": "sha256-hqHV3mZp3HBpSwIMQLEP24PkRMwd9Ol6ZDtORuryciM=",
         "owner": "neovim",
         "repo": "neovim",
-        "rev": "eac2f0443e032ba238ca6b4a9e2fd6135be454b3",
+        "rev": "067b5743f543798f4e58003816fc930f4106c2b0",
         "type": "github"
       },
       "original": {
@@ -69,10 +69,10 @@
         ]
       },
       "locked": {
-        "lastModified": 1766328071,
-        "narHash": "sha256-54zDEm3Y0zzdzKhsnzfv25Z9bPx2g32HKjsKo6pHnwc=",
+        "lastModified": 1767402313,
+        "narHash": "sha256-oC/rsIMcxRksoxx2QxYukCB73g0jL2mE3OObnelsZD0=",
         "ref": "refs/heads/main",
-        "rev": "2e1dabbc3c31b4ec1f04cc998a2502baf37f28e3",
+        "rev": "6d2b51c24b34a85aeeb41b11fee10316d6abf12a",
         "shallow": true,
         "type": "git",
         "url": "https://codeberg.org/NicoElbers/nixPatch-nvim"
@@ -85,10 +85,10 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1766651565,
-        "narHash": "sha256-QEhk0eXgyIqTpJ/ehZKg9IKS7EtlWxF3N7DXy42zPfU=",
+        "lastModified": 1768305791,
+        "narHash": "sha256-AIdl6WAn9aymeaH/NvBj0H9qM+XuAuYbGMZaP0zcXAQ=",
         "ref": "nixos-unstable",
-        "rev": "3e2499d5539c16d0d173ba53552a4ff8547f4539",
+        "rev": "1412caf7bf9e660f2f962917c14b1ea1c3bc695e",
         "shallow": true,
         "type": "git",
         "url": "https://mirrors.tuna.tsinghua.edu.cn/git/nixpkgs.git"
