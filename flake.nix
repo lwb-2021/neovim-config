@@ -86,6 +86,8 @@
             comment-nvim
             flash-nvim
             nvim-lspconfig
+            # treesitter
+            treesitter-modules-nvim
             (nvim-treesitter.withPlugins (
               p: with p; [
                 markdown
@@ -112,6 +114,7 @@
                 rust
               ]
             ))
+
             # qwen-code
             rustaceanvim
             snacks-nvim

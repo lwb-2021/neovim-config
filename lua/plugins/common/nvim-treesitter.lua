@@ -14,17 +14,16 @@ local grammars = {
 return {
   "MeanderingProgrammer/treesitter-modules.nvim",
   dependencies = {
-    "nvim-treesitter/nvim-treesitter",
-    lazy = false,
-    build = ":TSUpdate",
+    {
+      "nvim-treesitter/nvim-treesitter",
+      lazy = false,
+      build = ":TSUpdate",
+    },
   },
   ---@module "treesitter-modules"
   ---@type ts.mod.UserConfig
   opts = {
     ensure_installed = grammars,
-    fold = {
-      enable = true,
-    },
     highlight = {
       enable = true,
       -- setting this to true will run `:h syntax` and tree-sitter at the same time
