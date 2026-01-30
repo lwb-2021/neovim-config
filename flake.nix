@@ -161,8 +161,8 @@
             vue-language-server
             rust-analyzer
 
+            rustc
             cargo
-
             rustfmt
 
             wl-clipboard-rs
