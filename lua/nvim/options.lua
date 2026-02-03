@@ -8,8 +8,13 @@ vim.opt.shiftwidth = 2
 vim.opt.expandtab = true
 vim.opt.smartindent = true
 
-vim.o.winborder = "rounded"
+if vim.fn.has("linux") then
+  vim.opt.shell = "fish"
+elseif vim.fn.has("windows") then
+  vim.opt.shell = "powershell"
+end
 
+vim.o.winborder = "rounded"
 
 vim.g.neovide_opacity = 0.8
 vim.g.neovide_normal_opacity = 0.8
