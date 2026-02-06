@@ -1,4 +1,6 @@
 local lsp = {
+  "rust_analyzer", -- Don't move this
+
   "lua_ls",
   "nil_ls",
 
@@ -8,7 +10,6 @@ local lsp = {
 
   "slint_lsp",
 
-  "rust_analyzer",
 
   "pylsp",
 }
@@ -46,30 +47,16 @@ return {
       filetypes = tsserver_filetypes,
     }
 
-    --[[
-        local rust_analyzer_config = {
-          imports = {
-            granularity = {
-              group = "module",
-            },
-            prefix = "self",
-          },
-          cargo = {
-            buildScripts = {
-              enable = true,
-            },
-          },
-          procMacro = {
-            enable = true
-          },
-        }
-        ]]
     vim.lsp.config('vtsls', vtsls_config)
     vim.lsp.config('vue_ls', vue_ls_config)
-    -- vim.lsp.config('rust_analyzer', rust_analyzer_config)
-
-    vim.lsp.enable(lsp, vim.g.nix)
   end,
+  opts = {
+    servers = {
+      rust_analyzer = {
+        enabled = false
+      }
+    },
+  },
   dependencies = {
     {
       "mason-org/mason.nvim",
