@@ -40,9 +40,8 @@ LspConfig = {
 
   slint_lsp = {},
 
-  rust_analyzer = {
-    enabled = false
-  },
+  rust_analyzer = {}, -- for installing, not enabled actually
+
   ["rust-analyzer"] = {
     settings = {
       cargo = {
@@ -81,6 +80,10 @@ vim.diagnostic.config {
 }
 
 for name, config in pairs(LspConfig) do
+  if name ~= "*" and name ~= "rust_analyzer" then
+    vim.lsp.enable(name)
+  end
+
   if config then
     vim.lsp.config(name, config)
   end

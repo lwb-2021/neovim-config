@@ -129,7 +129,7 @@
             codecompanion-nvim
             nvim-colorizer-lua
             conform-nvim
-            # direnv
+            direnv-vim
             lualine-nvim
             markview-nvim
             neo-tree-nvim
