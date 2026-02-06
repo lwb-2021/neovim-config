@@ -81,13 +81,6 @@ vim.diagnostic.config {
 }
 
 for name, config in pairs(LspConfig) do
-  if not config.enabled then
-    return
-  end
-
-  if name ~= "*" then
-    vim.lsp.enable(name)
-  end
   if config then
     vim.lsp.config(name, config)
   end
