@@ -1,3 +1,4 @@
+require("utils")
 require("nvim.options")
 require("nvim.keymap")
 

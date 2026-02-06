@@ -210,7 +210,7 @@
             [
             ]
             ++ (patchUtils.urlSub "saghen/blink.cmp" pkgs.vimPlugins.blink-cmp)
-            ++ (patchUtils.stringSub "lsp.vue-language-server" "${pkgs.vue-language-server}");
+            ++ (patchUtils.stringSub "lsp.vue-language-server" "${pkgs.vue-language-server}/lib/language-tools/packages/language-server");
           # For example, if you want to add a plugin with the short url
           # "cool/plugin" which is in nixpkgs as plugin-nvim you would do:
           # ++ (patchUtils.githubUrlSub "cool/plugin" plugin-nvim);

@@ -1,69 +1,19 @@
-local lsp = {
-  "rust_analyzer", -- Don't move this
-
-  "lua_ls",
-  "nil_ls",
-
-  "eslint",
-  "vtsls",
-  "vue_ls",
-
-  "slint_lsp",
-
-
-  "pylsp",
-}
 return {
   "neovim/nvim-lspconfig",
-  config = function()
-    local vue_language_server_path = [[lsp.vue-language-server]] .. '/vue-language-server'
-        .. '/node_modules/@vue/language-server'
 
-    if not vim.g.nix then
-      local mason_registry = require('mason-registry')
-      vue_language_server_path = vim.fn.expand '$MASON/packages' .. '/vue-language-server'
-          .. '/node_modules/@vue/language-server'
-    end
-
-    local tsserver_filetypes = { 'typescript', 'javascript', 'javascriptreact', 'typescriptreact', 'vue' }
-    local vue_plugin = {
-      name = '@vue/typescript-plugin',
-      location = vue_language_server_path,
-      languages = { 'vue' },
-      configNamespace = 'typescript',
-    }
-    local vue_ls_config = {}
-
-    local vtsls_config = {
-      settings = {
-        vtsls = {
-          tsserver = {
-            globalPlugins = {
-              vue_plugin,
-            },
-          },
-        },
-      },
-      filetypes = tsserver_filetypes,
-    }
-
-    vim.lsp.config('vtsls', vtsls_config)
-    vim.lsp.config('vue_ls', vue_ls_config)
-  end,
-  opts = {
-    servers = {
-      rust_analyzer = {
-        enabled = false
-      }
-    },
-  },
   dependencies = {
     {
       "mason-org/mason.nvim",
       enabled = not vim.g.nix,
-      opts = {
-        ensure_installed = lsp,
-      }
+      opts = function()
+        local lsp = {}
+        for name, _ in pairs(LspConfig) do
+          table.insert(lsp, name)
+        end
+        return {
+          ensure_installed = lsp,
+        }
+      end
     },
     {
       "mason-org/mason-lspconfig.nvim",

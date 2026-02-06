@@ -2,5 +2,5 @@
   "direnv.nvim": { "branch": "main", "commit": "0d2edd378dbdf2c653869772d761ad914219ba9d" },
   "neovim-project": { "branch": "main", "commit": "6ecf6253697b2964e9afef9d000357d887221a2c" },
   "neovim-session-manager": { "branch": "master", "commit": "89d253a6c68af60b49570044591d5b8701866601" },
-  "nvim-colorizer.lua": { "branch": "master", "commit": "a065833f35a3a7cc3ef137ac88b5381da2ba302e" }
+  "nvim-colorizer.lua": { "branch": "master", "commit": "a065833f35a3a7cc3ef137ac88b5381da2ba302e" },
 }
