@@ -14,9 +14,8 @@ return {
   opts = {
     last_session_on_startup = false,
     projects = { -- define project roots
-      "~/NixOS-Configuration",
+      "~/Configurations/*",
       "~/Workspace/*/*",
-      "~/.config/*",
     },
     picker = {
       type = "telescope", -- one of "telescope", "fzf-lua", or "snacks"
