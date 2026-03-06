@@ -131,7 +131,7 @@
             conform-nvim
             direnv-vim
             lualine-nvim
-            markview-nvim
+            render-markdown-nvim
             neo-tree-nvim
 
             # -- noice --
