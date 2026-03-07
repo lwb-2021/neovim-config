@@ -3,13 +3,23 @@ return {
   priority = 1000,
   lazy = false,
   keys = {
-    {
-      "<leader>g",
-      function()
-        require("snacks").lazygit()
-      end,
-      desc = "Lazygit"
-    }
+    -- language server
+    { "gd",          function() Snacks.picker.lsp_definitions() end,  desc = "Goto definition" },
+    { "gD",          function() Snacks.picker.lsp_declarations() end, desc = "Goto Declaration" },
+    { "gr",          function() Snacks.picker.lsp_references() end,   desc = "References",      nowait = true },
+
+    -- picker
+    { "<leader>ff",  function() Snacks.picker.smart() end,            desc = "Smart find files" },
+    { "<leader>fg",  function() Snacks.picker.grep() end,             desc = "Live grep" },
+
+    -- gh
+    { "<leader>ghi", function() Snacks.picker.gh_issue() end },
+
+    -- git
+    { "<leader>gg",  function() Snacks.lazygit() end,                 desc = "Lazygit" },
+
+    -- terminal
+    { "<leader>t",   function() Snacks.terminal() end,                desc = "Toggle terminal" },
   },
   --- @type snacks.Config
   opts = {
@@ -35,18 +45,21 @@ return {
           { icon = " ", key = "q", desc = "Quit", action = ":qa" },
         },
       },
-      explorer = { enabled = false },
-      indent = { enabled = true },
-      input = { enabled = true },
-      lazygit = { enabled = true },
-      picker = { enabled = false },
-      notifier = { enabled = false },
-      quickfile = { enabled = true },
-      rename = { enabled = true },
-      scope = { enabled = true },
-      scroll = { enabled = true },
-      statuscolumn = { enabled = true },
-      words = { enabled = true },
     },
+    explorer = { enabled = false },
+    gh = { enabled = true },
+    image = { enabled = true },
+    indent = { enabled = true },
+    input = { enabled = true },
+    lazygit = { enabled = true },
+    picker = { enabled = true },
+    notifier = { enabled = false },
+    quickfile = { enabled = true },
+    rename = { enabled = true },
+    scope = { enabled = true },
+    scroll = { enabled = true },
+    statuscolumn = { enabled = true },
+    terminal = { enabled = true },
+    words = { enabled = true },
   },
 }

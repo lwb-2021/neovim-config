@@ -141,8 +141,6 @@
             # -----------
 
             # project
-            telescope-nvim
-            toggleterm-nvim
             which-key-nvim
 
           ];
