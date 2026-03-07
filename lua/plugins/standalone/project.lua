@@ -18,7 +18,7 @@ return {
       "~/Workspace/*/*",
     },
     picker = {
-      type = "telescope", -- one of "telescope", "fzf-lua", or "snacks"
+      type = "snacks", -- one of "telescope", "fzf-lua", or "snacks"
     }
   },
   init = function()
@@ -27,7 +27,6 @@ return {
   end,
   dependencies = {
     { "nvim-lua/plenary.nvim" },
-    { "nvim-telescope/telescope.nvim" },
     { "Shatur/neovim-session-manager" },
   },
   lazy = false,
