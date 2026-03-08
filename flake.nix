@@ -115,6 +115,8 @@
               ]
             ))
 
+            inc-rename-nvim
+
             # qwen-code
             rustaceanvim
             snacks-nvim
