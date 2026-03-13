@@ -80,6 +80,7 @@
             lazy-nvim
 
             nvim-web-devicons
+            gitsigns-nvim
             plenary-nvim
 
             catppuccin-nvim
@@ -128,6 +129,7 @@
             blink-cmp
             # -----------
 
+            barbar-nvim
             codecompanion-nvim
             nvim-colorizer-lua
             conform-nvim
