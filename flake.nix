@@ -129,7 +129,6 @@
             blink-cmp
             # -----------
 
-            barbar-nvim
             codecompanion-nvim
             nvim-colorizer-lua
             conform-nvim
