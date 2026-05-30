@@ -135,7 +135,6 @@
             direnv-vim
             lualine-nvim
             render-markdown-nvim
-            neo-tree-nvim
 
             # -- noice --
             noice-nvim
@@ -146,6 +145,8 @@
             # project
             which-key-nvim
 
+            yazi-nvim
+
           ];
 
           # Runtime dependencies. This is thing like tree-sitter, lsps or programs
@@ -153,6 +154,8 @@
           runtimeDeps = with pkgs; [
             tree-sitter
             ripgrep
+
+            libuv
 
             lua-language-server
             nil
@@ -165,6 +168,8 @@
             rustc
             cargo
             rustfmt
+
+            yazi
 
             wl-clipboard-rs
           ];
