@@ -118,6 +118,8 @@
 
             inc-rename-nvim
 
+            lazydev-nvim
+
             # qwen-code
             rustaceanvim
             snacks-nvim

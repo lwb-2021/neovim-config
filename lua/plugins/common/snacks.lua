@@ -21,6 +21,7 @@ return {
     -- terminal
     { "<leader>t",   function() Snacks.terminal() end,                desc = "Toggle terminal" },
   },
+  --- @module snacks
   --- @type snacks.Config
   opts = {
     bigfile = { enabled = true },
