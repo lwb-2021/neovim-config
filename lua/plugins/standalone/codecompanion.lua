@@ -22,21 +22,21 @@ return {
       }
     },
     strategies = {
-      -- inline = {
-      --   adapter = {
-      --     name = "siliconflow",
-      --     model = "Qwen/Qwen2.5-Coder-7B-Instruct"
-      --   }
-      -- },
-      chat = {
+      inline = {
         adapter = {
           name = "siliconflow",
-          model = "Qwen/Qwen3.5-4B",
+          model = "Qwen/Qwen2.5-Coder-7B-Instruct"
+        }
+      },
+      chat = {
+        adapter = {
+          name = "opencode",
+          -- model = "",
         }
       }
     },
     opts = {
-      -- language = "Chinese",
+      language = "Chinese",
     }
   },
   dependencies = {
